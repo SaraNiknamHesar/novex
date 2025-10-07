@@ -37,8 +37,12 @@ return [
 
     'guards' => [
         'web' => [
+            'driver' => 'session', // ینی این گارد از سشن و کوکی برای ورود استفاده میکنه
+            'provider' => 'users', // اطلاعات کاربران رو از جدول یوزر بگیر
+        ],
+        'admin' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'admins',
         ],
     ],
 
@@ -64,7 +68,11 @@ return [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
-
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL', App\Models\Admin::class),
+            // اینجا میاد به جدول ادمین ها وصل میشه برای بررسی اطلاعات
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
@@ -97,7 +105,15 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+        // کارش اینه که به لاراول بگه چطور سیستم "فراموشی رمز عبور" رو برای هر نوع کاربر انجام بده.
+        'admins' => [
+            'provider' => 'admins', // کدوم جدول
+            'table' => env('AUTH_PASSWORD_RESET_TOKEN_TABLE', 'password_reset_tokens'),
+            'expire' => 60,
+            'throttle' => 60,
+        ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------
