@@ -57,17 +57,7 @@
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="{{ asset('assets/admin/css/tabler.css?1750026890') }}" rel="stylesheet" />
     <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PLUGINS STYLES -->
-    <link href="./dist/css/tabler-flags.css?1750026890" rel="stylesheet" />
-    <link href="./dist/css/tabler-socials.css?1750026890" rel="stylesheet" />
-    <link href="./dist/css/tabler-payments.css?1750026890" rel="stylesheet" />
-    <link href="./dist/css/tabler-vendors.css?1750026890" rel="stylesheet" />
-    <link href="./dist/css/tabler-marketing.css?1750026890" rel="stylesheet" />
-    <link href="./dist/css/tabler-themes.css?1750026890" rel="stylesheet" />
-    <!-- END PLUGINS STYLES -->
-    <!-- BEGIN DEMO STYLES -->
-    <link href="./preview/css/demo.css?1750026890" rel="stylesheet" />
-    <!-- END DEMO STYLES -->
+
     <!-- BEGIN CUSTOM FONT -->
     <style>
         @import url("https://rsms.me/inter/inter.css");
@@ -112,7 +102,7 @@
                             <label class="form-label">
                                 Password
                                 <span class="form-label-description">
-                                    <a href="{{ route('admin.password.reset') }}">I forgot password</a>
+                                    <a href="{{ route('admin.password.request') }}">I forgot password</a>
                                 </span>
                             </label>
                             <div class="input-group input-group-flat">
