@@ -44,7 +44,7 @@
                                     <div class="heading_s1">
                                         <h3 class="mb-5">Forgot Password</h1>
                                             <p class="mb-30"> {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password
-                                            reset link that will allow you to choose a new one.') }}</p>
+                                                reset link that will allow you to choose a new one.') }}</p>
                                     </div>
                                     <form method="POST" action="{{ route('password.email') }}">
                                         @csrf

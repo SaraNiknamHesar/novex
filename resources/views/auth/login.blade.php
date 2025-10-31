@@ -70,7 +70,8 @@
                                         <p class="mb-30">Don't have an account? <a href="{{ route('register') }}">Create
                                                 here</a></p>
                                     </div>
-                                    <form method="post" action="{{ route('login') }}">
+
+                                    <form method="POST" action="{{ route('login') }}">
                                         @csrf
                                         <div class="form-group">
                                             <input type="email" required="" name="email" placeholder="Your Email *"
@@ -83,6 +84,7 @@
                                                 placeholder="Your password *" />
                                             <x-input-error :messages="$errors->get('password')" class="mt-2" />
                                         </div>
+
                                         <div class="login_footer form-group mb-50">
                                             <div class="chek-form">
                                                 <div class="custome-checkbox">
@@ -93,15 +95,12 @@
                                                 </div>
                                             </div>
 
-
-
-
                                             <a class="text-muted" href="{{ route('password.request') }}">Forgot
                                                 password?</a>
                                         </div>
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-heading btn-block hover-up"
-                                                name="login">Log in</button>
+                                            <button type="submit" class="btn btn-heading btn-block hover-up" name="login">
+                                                {{ __('Log in') }}</button>
                                         </div>
                                     </form>
                                 </div>
