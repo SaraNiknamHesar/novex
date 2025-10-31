@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset("assets/frontend/dist/css/main.css") }}" />
+
 </head>
 
 <body>
@@ -148,7 +151,7 @@
     <script src="{{ asset("assets/frontend/dist/js/plugins/waypoints.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/wow.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/perfect-scrollbar.js") }}"></script>
-    <script src="{{ asset("assets/frontned/dist/js/plugins/magnific-popup.js") }}"></script>
+    <script src="{{ asset("assets/frontend/dist/js/plugins/magnific-popup.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/select2.min.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/counterup.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/jquery.countdown.min.js") }}"></script>
@@ -159,7 +162,7 @@
     <script src="{{ asset("assets/frontend/dist/js/plugins/jquery.theia.sticky.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/jquery.elevatezoom.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/slider-range.js") }}"></script>
-    <script src="{{ asset("assets/frontned/dist/js/plugins/jquery-ui.js") }}"></script>
+    <script src="{{ asset("assets/frontend/dist/js/plugins/jquery-ui.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/custom-parallax.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/leaflet.js") }}"></script>
     <script src="{{ asset("assets/frontend/dist/js/plugins/TweenMax.min.js") }}"></script>
